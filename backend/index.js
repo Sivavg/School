@@ -47,7 +47,7 @@ app.use(express.json({ limit: '10mb' }));
 app.use(cors());
 
 // MongoDB connection
-const mongoURI = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/student';  // Fallback to local if MONGO_URL is not set in env
+const mongoURI = process.env.MONGO_URL;  // Fallback to local if MONGO_URL is not set in env
 //const mongoURI = "mongodb+srv://gamespidy4:Venki2002@school.cp3qw.mongodb.net/?retryWrites=true&w=majority&appName=School";
 
 mongoose
